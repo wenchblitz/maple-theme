@@ -1,0 +1,338 @@
+@charset "utf-8";
+/* CSS Document */
+
+/*  
+
+Theme Name: Maple (Autumn's Essence)
+Theme URI: 
+Description: Wordpress Theme
+Version: 
+Author: wenchblitz
+Author URI: http://wenchblitz.webs.com/Portfolio/Portf.html
+
+*/
+
+body, h1, h2, h3, h4, h5, h6, blockquote, dd, dl, hr, p, form{
+margin: 0;
+padding: 0;
+}
+
+body{
+	margin: 0 auto;
+	padding: 0;
+	font-family: Georgia, Sans-serif;
+	font-size: 10pt;
+	text-align: center;
+	vertical-align: top;
+	background:url(images/bg_maple.png) repeat-x top left #FADBBC;
+	color: #663606;
+}
+
+h1{
+	font-family: Georgia, Sans-serif;
+	font-size: 24px;
+	padding: 0 0 10px 0;	
+}
+
+a:link, a:visited{
+	text-decoration: none;
+	color: #B4712D;
+}
+
+a:hover{
+	text-decoration: underline;
+	color: #996633;
+}
+
+p{
+	margin: 0 auto 10px;
+}
+
+.left{float: left;}
+.right{float: right;}
+.clear { clear: both;}
+
+/***********************/
+
+#wrapper{
+	margin: 0 auto;
+	padding: 0;
+	width: 750px;
+	text-align: left;
+	overflow: hidden;
+}
+
+#header{
+	float: left;
+	width: 750px;
+	height: 115px;
+	border: 0px solid #C90;
+}
+
+#header ul{
+	margin: 0 auto;
+	padding: 0;
+	width: 800px;
+	height: 106px;
+	list-style: none;
+	background:url(images/maple_small.png) top left no-repeat;	
+}
+
+#header ul li{
+	margin: 0 auto;
+	padding: 0;
+	display:block;
+	float: left;
+	border: 0px solid #000;
+}
+
+.menu { margin: 0 auto 10px; padding: 0; width: 750px; height: 25px; clear: both; position: relative;}
+.menu ul { margin: 0 auto; padding: 0; width: 750px;}
+.menu ul li { margin: 0 auto; padding: 10px 20px; display: block; float: left; position: relative;}
+.menu ul a { color: #red;}
+.menu ul li:hover a { color: #c90;}
+.menu ul li ul a { display: block; width: 100%; height: 100%;}
+.menu ul ul { margin: 0 auto; padding: 0; border: 1px solid #d59e66; border-bottom: none; background: #fcecdb; position: absolute; z-index: 500; width: auto;}
+.menu ul ul li { display:block; border-bottom: 1px solid #d59e66; margin: 0 auto; padding: 10px 20px; }
+.menu ul ul li:hover { background: #fad7a1;}
+.menu ul ul a { display:block; width: 100%; height: 100%;}
+.menu ul ul a:hover { color: #FF000;}
+
+.menu ul ul, .menu ul li:hover ul { display: none;}
+.menu ul li:hover ul { display: block;}
+
+#container{
+	float: left;
+	width: 500px;
+	text-align: justify;
+}
+
+.post{
+	margin: 15px 0 0 0;
+	padding: 10px 0 10px 0;
+	border-bottom: 1px solid #D59E66;
+}
+
+.post h2{ 
+	font-family: Georgia, Sans-serif;
+	font-size: 18px;
+}
+
+p.postdata{
+	margin: 20px 0 0 0;
+	padding: 5px 0 15px 0;	
+}
+
+.entry{
+	line-height: 18px;
+	margin: 0 20px 0 0;
+	padding: 0;
+}
+
+.notfound{
+	padding: 10px 0 10px 0;
+}
+
+.notfound h2{
+	font-family: Georgia, Sans-serif;
+	font-size: 18px;
+}
+
+p.postmetadata{
+	margin: 0 0 0 0;
+	padding: 5px 0 15px 0;
+}
+
+.navigation{
+	text-transform:capitalize;
+	padding: 25px 0 0 0;
+	font-size: 14px;
+	font-weight: bold;
+	line-height: 18px;
+}
+
+.sidebar{
+	float: left;
+	/**width: 244px;**/
+	background: transparent;
+	border-left: 1px solid #D59E66;
+	border-bottom: 0px dashed #D59E66;
+	margin: 0;
+	padding: 0;
+	display: inline;
+	background:url(images/maple_big.png) bottom right no-repeat;
+}
+
+.sidebar ul{
+	list-style-type: none;
+	margin: 0;
+	padding: 0 0 0 25px;
+}
+
+.sidebar ul li{
+	padding: 10px 0 10px 0;
+}
+
+.sidebar ul li h2{
+	font-family: Georgia, Sans-serif;
+	font-size: 14px;
+}
+
+.sidebar ul ul li{
+	padding: 0;
+	line-height: 18px;
+}
+
+table#wp-calendar{
+width: 100%;
+}
+
+#footer{
+	border-top: 1px dashed #D59E66;
+	clear: both;
+	float: left;
+	width: 750px;
+	height: 150px;
+	padding: 10px 0 0 0;
+	margin: 25px 0 0 0;
+	background:url(images/maple_big_footer.png) bottom right no-repeat;
+}
+
+#footer p{
+	line-height: 18px;
+}
+
+#footer ul{
+	margin: 0 auto;
+	padding: 0;
+	width: auto;
+	list-style: none;	
+}
+
+#footer ul li{
+	display: block;
+	float: left;
+	margin: 0 auto;
+	padding: 10px;
+}
+
+/*********************************/
+
+#searchform{
+	/**background:url(images/search_box.png) top center no-repeat;**/
+	width: 219px;
+	height: 30px;
+	margin: 0 auto;
+	padding: 0;
+	border: 0px solid #000;
+	position: relative;
+}
+
+#searchbox{
+	padding: 0 0 0 5px;
+	font-family: Georgia, Sans-serif;
+	font-size: 10pt;
+	color: #663606;
+	position:absolute;
+	background-color:transparent;
+	width: 155px;
+	height: 28px;
+	border: 1px solid #d59e66;
+	background: #fcecdb;
+	
+	*padding-top: 6px;
+	*height: 22px;
+	
+	padding-top: 6px\0/;
+	height: 22px\0/;	
+}
+
+@media all and (min-width:0) {
+	#searchbox{
+		padding: 0 0 0 5px;
+		font-family: Georgia, Sans-serif;
+		font-size: 10pt;
+		color: #663606;
+		position:absolute;
+		background-color:transparent;
+		width: 155px;
+		height: 28px;
+		border: 1px solid #d59e66;
+		background: #fcecdb;	
+	}	
+}
+
+#searchsubmit{
+	background: none;
+	border: 1px solid #D59E66;
+	border-left: 0;
+	*border: thin solid #D59E66;
+	*border-left: 0;
+	*color: #996633;
+	position:absolute;
+	width: 56px;
+	height: 30px;
+	right: 2px;	
+	color: #996633;
+}
+
+#searchsubmit:hover { cursor: pointer; color: #cc9900;}
+
+/*************COMMENTS CSS********************/
+
+.comments-template{
+	margin: 0 auto 10px;
+	border-top: 1px solid #D59E66;
+	padding: 10px 0 0;
+}
+
+.comments-template ol{
+	margin: 0;
+	padding: 0;
+	list-style: none;
+}
+
+.comments-template ol li{
+	margin: 0 auto 10px;
+	line-height: 18px;
+	padding: 0;
+	border-bottom: 1px solid #D59E66;
+	position: relative;
+}
+
+.comments-template h2, .comments-template h3{
+	font-family: Georgia, Sans-serif;
+	font-size: 16px;
+}
+
+.commentmetadata{
+	font-size: 10pt;
+}
+
+.commentmetadata img{
+	border: 1px solid #D59E66;
+}
+
+.comments-template p.nocomments{
+	padding: 0;
+}
+
+.comments-template textarea{
+	font-family: Georgia, Sans-serif;
+	font-size: 10pt;
+	width: 485px;
+}
+
+.boxborder{
+	border: 1px solid #D59E66;
+	background-color: #FAE4CF;
+	font-family: Georgia, Sans-serif;
+	color: #663606;
+}
+
+#comments, #respond { margin: 0 auto 10px; padding: 0 0 10px 0; border-bottom: 1px solid #D59E66;}
+.the-avatar { margin: 0 10px 0 0; padding: 0; float: left;}
+.the-comment { margin: 0 auto; padding: 0; width: 423px; float: left;}
+.the-comment p { margin: 0; padding: 0;}
+.comment-meta { margin: 0; padding: 10px 0 0 0; position: relative;}
+.comment-edit-link { float: right; padding: 0 5px 5px 0;}
